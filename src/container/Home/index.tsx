@@ -13,13 +13,16 @@ function Home() {
 				apiKey: 'd424d6d114074feb80c770e97742831a',
 			},
 		})
-			.then((res: any) => setData(res.data))
+			.then((res: any) => setData(res.data.articles))
 			.catch((err: any) => console.log(err));
 	}, []);
-	console.log(data);
 	return (
 		<Styled.Container>
-			<div>Home</div>
+			{data?.map((d: any, index: number) => (
+				<React.Fragment key={index}>
+					<div>{d.author}</div>
+				</React.Fragment>
+			))}
 		</Styled.Container>
 	);
 }
