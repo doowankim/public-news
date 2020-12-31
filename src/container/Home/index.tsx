@@ -16,11 +16,28 @@ function Home() {
 			.then((res: any) => setData(res.data.articles))
 			.catch((err: any) => console.log(err));
 	}, []);
+
+	console.log(data);
+
 	return (
 		<Styled.Container>
 			{data?.map((d: any, index: number) => (
 				<React.Fragment key={index}>
-					<div>{d.author}</div>
+					<Styled.Table>
+						<thead></thead>
+						<tbody>
+							<td>
+								<Styled.Image src={d.urlToImage} alt={d.source.id} />
+							</td>
+							<td>
+								<Styled.Title>{d.title}</Styled.Title>
+								<Styled.Description>{d.description}</Styled.Description>
+								<a href={d.url}>
+									<Styled.Button>기사 보러가기</Styled.Button>
+								</a>
+							</td>
+						</tbody>
+					</Styled.Table>
 				</React.Fragment>
 			))}
 		</Styled.Container>
