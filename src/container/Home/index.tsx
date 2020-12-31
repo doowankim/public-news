@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import * as Styled from './styles';
 
 function Home() {
 	const [data, setData] = useState<any>();
@@ -19,9 +20,33 @@ function Home() {
 	console.log(data);
 
 	return (
-		<div>
-			<div></div>
-		</div>
+		<Styled.Container>
+			{/* <Styled.HeadlineBox>
+				<Styled.Title>Headline News</Styled.Title>
+				<Styled.Table>
+					<tbody>
+						<tr>
+							<td rowSpan={5}>
+								<Styled.Image src="/images/news.jpeg" alt="" />
+							</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+					</tbody>
+				</Styled.Table>
+			</Styled.HeadlineBox> */}
+		</Styled.Container>
 	);
 }
 

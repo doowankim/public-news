@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 import { lighten } from 'polished';
 
-export const Container = styled.div``;
-
-export const Logo = styled.div`
+export const Container = styled.div`
 	width: 100%;
 	height: 50px;
 	background-color: #3f64bf;
+	/* padding: 10px 40px; */
+`;
+
+export const Logo = styled.div`
+	width: 1080px;
+	margin: 0 auto;
 	color: #fff;
-	padding: 10px 40px;
 `;
 
 export const LogoBox = styled.div`
@@ -28,6 +31,8 @@ export const News = styled.div`
 
 export const Segment = styled.ul`
 	display: flex;
+	width: 1120px;
+	margin: 20px auto;
 	list-style: none;
 
 	li {
