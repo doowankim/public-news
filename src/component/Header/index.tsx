@@ -4,16 +4,18 @@ import * as Styled from './styles';
 function Header() {
 	return (
 		<Styled.Container>
-			<Styled.Wrapper>
-				<Styled.UList>
-					<Styled.Item>
-						<Styled.SLink to="/">헤드라인 뉴스</Styled.SLink>
-					</Styled.Item>
-					<Styled.Item>
-						<Styled.SLink to="/category">카테고리 별로 보기</Styled.SLink>
-					</Styled.Item>
-				</Styled.UList>
-			</Styled.Wrapper>
+			<Styled.Logo>
+				<Styled.LogoBox>
+					<Styled.LogoName>Global</Styled.LogoName>
+					<Styled.News>News</Styled.News>
+				</Styled.LogoBox>
+			</Styled.Logo>
+			<Styled.Segment>
+				<li>Headline</li>
+				<li>Everything</li>
+				<li>Source</li>
+			</Styled.Segment>
+			<Styled.Hr />
 		</Styled.Container>
 	);
 }

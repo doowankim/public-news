@@ -1,27 +1,48 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { lighten } from 'polished';
 
 export const Container = styled.div``;
 
-export const Wrapper = styled.div`
-	display: flex;
+export const Logo = styled.div`
 	width: 100%;
-	padding: 5px 20px;
-	color: #ffffff;
-	background: #3f64bf;
-	font-weight: bold;
+	height: 50px;
+	background-color: #3f64bf;
+	color: #fff;
+	padding: 10px 40px;
 `;
 
-export const UList = styled.ul`
+export const LogoBox = styled.div`
+	display: flex;
+`;
+
+export const LogoName = styled.div`
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 15px;
+`;
+
+export const News = styled.div`
+	font-size: 24px;
+	margin: 10px 10px;
+`;
+
+export const Segment = styled.ul`
 	display: flex;
 	list-style: none;
+
+	li {
+		font-weight: bold;
+		margin-right: 20px;
+		cursor: pointer;
+
+		&:hover {
+			color: ${lighten(0.5, '#020202')};
+		}
+	}
 `;
 
-export const Item = styled.li`
-	margin-left: 15px;
-	cursor: pointer;
-	border-bottom: 3px solid
-		${(props: any) => (props.current ? '#ffffff' : '#3f64bf')};
+export const Hr = styled.div`
+	width: 100%;
+	height: 1px;
+	background-color: #e5e3e3;
 `;
-
-export const SLink = styled(Link)``;
