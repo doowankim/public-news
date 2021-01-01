@@ -5,7 +5,6 @@ export const Container = styled.div`
 	width: 100%;
 	height: 50px;
 	background-color: #3f64bf;
-	/* padding: 10px 40px; */
 `;
 
 export const Logo = styled.div`

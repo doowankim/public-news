@@ -21,7 +21,7 @@ function Home() {
 
 	return (
 		<Styled.Container>
-			{/* <Styled.HeadlineBox>
+			<Styled.Box>
 				<Styled.Title>Headline News</Styled.Title>
 				<Styled.Table>
 					<tbody>
@@ -45,7 +45,59 @@ function Home() {
 						</tr>
 					</tbody>
 				</Styled.Table>
-			</Styled.HeadlineBox> */}
+			</Styled.Box>
+			<Styled.Hr />
+			<Styled.Box>
+				<Styled.Title>Everything News</Styled.Title>
+				<Styled.Table>
+					<tbody>
+						<tr>
+							<td rowSpan={5}>
+								<Styled.Image src="/images/news.jpeg" alt="" />
+							</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+					</tbody>
+				</Styled.Table>
+			</Styled.Box>
+			<Styled.Hr />
+			<Styled.Box>
+				<Styled.Title>Source News</Styled.Title>
+				<Styled.Table>
+					<tbody>
+						<tr>
+							<td rowSpan={5}>
+								<Styled.Image src="/images/news.jpeg" alt="" />
+							</td>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+						</tr>
+					</tbody>
+				</Styled.Table>
+			</Styled.Box>
 		</Styled.Container>
 	);
 }
