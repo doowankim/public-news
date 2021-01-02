@@ -11,13 +11,32 @@ export const Box = styled.div`
 `;
 
 export const Title = styled.div`
+	font-size: 24px;
 	font-weight: bold;
 `;
 
-export const Table = styled.table``;
+export const ImageWrapper = styled.a`
+	height: max-content;
+	margin-right: 50px;
+	cursor: pointer;
+`;
 
 export const Image = styled.img`
-	width: 100%;
+	width: 300px;
+	height: 180px;
+`;
+
+export const ArticleWrapper = styled.div`
+	display: flex;
+	margin: 30px 0;
+	/* white-space: normal;
+	line-height: 1.2;
+	text-overflow: ellipsis; */
+`;
+
+export const Description = styled.div`
+	font-weight: bold;
+	font-size: 18px;
 `;
 
 export const Hr = styled.div`
